@@ -54,14 +54,14 @@ header nav ul li a {
 header nav ul li:last-child a {
   margin-right: 0px;
 }
-header nav a:link {
+header nav ul li a:link {
   color: white;
 }
-header nav a:visited {
-  color: #4DA1A9;
+header nav ul li a:visited {
+  color: red;
 }
 
-header nav a:active {
+header nav ul li a:active {
   color: #2A4D14;
 }
 
@@ -155,14 +155,14 @@ form input {
 }
 
 /* link styling in main section */
-main a:link {
+main section a:link {
   color: #4DA1A9;
 }
-main a:visited {
-  color: black;
+main section a:visited {
+  color: red;
 }
 
-main a:active {
+main section a:active {
   color: salmon;
 }
 
@@ -173,11 +173,11 @@ main a:active {
 header nav ul {
   justify-content: space-between;
 }
-header a:hover {
+header nav ul li a:hover {
   color: #B58DB6;
 }
 
-main a:hover {
+main section a:hover {
   color: #B58DB6;
 }
 
