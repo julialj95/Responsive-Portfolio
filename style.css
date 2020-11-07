@@ -2,7 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 
+
 /* Header content */
+img {
+  border-radius: 15%;
+  width: 100%;
+}
 .btn {
   background-color: #A7C957;
   font-family: 'Montserrat Alternates';
@@ -13,7 +18,6 @@
   margin: 10px;
   padding: 6px 12px;
   border-radius: 6px;
-  text-decoration: none;
 }
 
 header {
@@ -30,35 +34,46 @@ h1,h2, h3,h4, h5, h6 {
 h1 {
   font-size: 40px;
 }
+ header nav {
+   display: flex;
+   justify-content:center;
+ }
 
-nav .item {
-  padding: 0;
-  margin: 0;
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
 }
-header a {
+header nav ul li a {
   font-family: 'Poiret One', cursive;
   font-size: 24px;
   text-decoration: none;
   font-weight: bold;
+  margin: 0 20px 0 0;
 }
-header a:link {
+header nav ul li:last-child a {
+  margin-right: 0px;
+}
+header nav a:link {
   color: white;
 }
-header a:visited {
+header nav a:visited {
   color: #4DA1A9;
 }
-header a:hover {
-  color: #B58DB6;
-}
-header a:active {
+
+header nav a:active {
   color: #2A4D14;
 }
+
+
+
 /* main content */
 main section {
   padding: 20px;
 }
 main a {
   font-family: 'Montserrat Alternates';
+  font-size: 20px;
 }
 h2 {
   font-size: 36px;
@@ -90,9 +105,8 @@ p, ul, ol {
   text-align: left;
 }
 
-img {
-  width: 100%;
-}
+
+
 
 /* footer content */
 footer {
@@ -101,6 +115,27 @@ footer {
   font-family: 'Poiret One', cursive;
   padding: 5px;
 }
+
+form label {
+  display: block;
+  font-family: 'Montserrat Alternates';
+  font-size: 18px;
+  
+}
+form textarea {
+  height: 160px;
+  color: black;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 100%
+}
+form input {
+  height: 25px;
+  margin-bottom: 20px;
+  width: 100%
+}
+
+
 /* flexboxes */
 .group {
   display: flex;
@@ -114,28 +149,49 @@ footer {
   flex: 2;
   padding: 10px;
 }
-/* link styling */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* link styling in main section */
 main a:link {
   color: #4DA1A9;
 }
 main a:visited {
   color: black;
 }
-main a:hover {
-  color: #B58DB6;
-}
+
 main a:active {
   color: salmon;
 }
+
+
 /* mobile first responsive development */
-@media all and (min-width: 600px) {
-  section {
+@media all and (min-width: 600px){
+  /* link styling for desktop */
+header nav ul {
+  justify-content: space-between;
+}
+header a:hover {
+  color: #B58DB6;
+}
+
+main a:hover {
+  color: #B58DB6;
+}
+
+section {
     padding: 0 10%;
   }
-  .group {
+.group {
     flex-direction: row;
   }
-  .img-padded {
+.img-padded {
     padding-top: 100px;
   }
+img {
+  width: 100%;
+}
+
 }
