@@ -107,7 +107,13 @@ p, ul, ol {
 .sm-text {
   font-size: 20px;
 }
-
+.no-padding {
+  margin: 5px 0 0 0;
+  padding:0;
+}
+.r-margin{
+  margin-right: 10px;
+}
 
 
 /* footer content */
@@ -168,14 +174,6 @@ main section a:active {
 }
 main section a {
   padding-top: 10px;
-}
-
-.no-padding {
-  margin: 5px 0 0 0;
-  padding:0;
-}
-.r-margin{
-  margin-right: 10px;
 }
 
 /* mobile first responsive development */
