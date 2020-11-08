@@ -104,7 +104,9 @@ p, ul, ol {
 .left {
   text-align: left;
 }
-
+.sm-text {
+  font-size: 20px;
+}
 
 
 
@@ -161,11 +163,20 @@ main section a:link {
 main section a:visited {
   color: red;
 }
-
 main section a:active {
   color: salmon;
 }
+main section a {
+  padding-top: 10px;
+}
 
+.no-padding {
+  margin: 5px 0 0 0;
+  padding:0;
+}
+.r-margin{
+  margin-right: 10px;
+}
 
 /* mobile first responsive development */
 @media all and (min-width: 600px){
