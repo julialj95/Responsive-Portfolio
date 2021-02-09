@@ -1,3 +1,7 @@
 # Responsive-Portfolio
-This is a portfolio example to practice mobile first responsive design.
-It has been updated to included responsive navigation and greater use of flexbox design.
+
+My portfolio has been built with a focus on mobile first responsive design.
+
+# Link
+
+[Visit Portfolio Here](https://julialj95.github.io/Responsive-Portfolio/)
