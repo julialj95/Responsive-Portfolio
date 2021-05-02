@@ -1,16 +1,21 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
 
 /* Header content */
 img {
   border-radius: 15%;
   width: 100%;
 }
+
+.img-padded {
+  width: 70%;
+  margin-left: 15%;
+}
+
 .btn {
-  background-color: #A7C957;
-  font-family: 'Montserrat Alternates';
+  background-color: #a7c957;
+  font-family: "Montserrat Alternates";
   display: inline-block;
   font-size: 16px;
   text-align: center;
@@ -23,37 +28,41 @@ img {
 header {
   background-color: #754668;
   color: white;
-  font-family: 'Poiret One', cursive;
+  font-family: "Poiret One", cursive;
   text-align: center;
   padding: 20px;
 }
 
-h1,h2, h3,h4, h5, h6 {
-  font-family: 'Poiret One', cursive;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poiret One", cursive;
 }
 h1 {
   font-size: 40px;
 }
- header nav {
-   display: flex;
-   justify-content:center;
- }
+header nav {
+  display: flex;
+  justify-content: center;
+}
 
 header nav ul {
   display: flex;
+  flex-direction: column;
   padding-left: 0;
   list-style: none;
 }
 header nav ul li a {
-  font-family: 'Poiret One', cursive;
+  font-family: "Poiret One", cursive;
   font-size: 24px;
   text-decoration: none;
   font-weight: bold;
   margin: 0 20px 0 0;
 }
-header nav ul li:last-child a {
-  margin-right: 0px;
-}
+
 header nav ul li a:link {
   color: white;
 }
@@ -62,17 +71,15 @@ header nav ul li a:visited {
 }
 
 header nav ul li a:active {
-  color: #2A4D14;
+  color: #2a4d14;
 }
-
-
 
 /* main content */
 main section {
   padding: 20px;
 }
 main a {
-  font-family: 'Montserrat Alternates';
+  font-family: "Montserrat Alternates";
   font-size: 20px;
 }
 h2 {
@@ -85,15 +92,17 @@ h3 {
   margin: 0px;
   padding: 0px;
 }
-p, ul, ol {
-  font-family: 'Montserrat Alternates'; 
+p,
+ul,
+ol {
+  font-family: "Montserrat Alternates";
   font-size: 24px;
 }
 .bg-green {
-  background-color: #D7E8BA;
+  background-color: #d7e8ba;
 }
 .bg-gray {
-  background-color: #BAC3C0;
+  background-color: #bac3c0;
 }
 .center {
   text-align: center;
@@ -109,46 +118,44 @@ p, ul, ol {
 }
 .no-padding {
   margin: 5px 0 0 0;
-  padding:0;
+  padding: 0;
 }
-.r-margin{
+.r-margin {
   margin-right: 10px;
 }
 
-
 /* footer content */
 footer {
-  background-color:  #754668;
+  background-color: #754668;
   color: white;
-  font-family: 'Poiret One', cursive;
+  font-family: "Poiret One", cursive;
   padding: 5px;
 }
 
 form label {
   display: block;
-  font-family: 'Montserrat Alternates';
+  font-family: "Montserrat Alternates";
   font-size: 18px;
-  
 }
 form textarea {
   height: 160px;
   color: black;
   font-size: 16px;
   margin-bottom: 20px;
-  width: 100%
+  width: 100%;
 }
 form input {
   height: 25px;
   margin-bottom: 20px;
-  width: 100%
+  width: 100%;
 }
-
 
 /* flexboxes */
 .group {
   display: flex;
   flex-direction: column;
 }
+
 .item {
   flex: 1;
   padding: 10px;
@@ -164,10 +171,10 @@ form input {
 
 /* link styling in main section */
 main section a:link {
-  color: #4DA1A9;
+  color: #0d474d;
 }
 main section a:visited {
-  color: red;
+  color: #800000;
 }
 main section a:active {
   color: salmon;
@@ -177,30 +184,39 @@ main section a {
 }
 
 /* mobile first responsive development */
-@media all and (min-width: 600px){
+@media all and (min-width: 600px) {
   /* link styling for desktop */
-header nav ul {
-  justify-content: space-between;
-}
-header nav ul li a:hover {
-  color: #B58DB6;
-}
+  header nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav ul li a:hover {
+    color: #b58db6;
+  }
 
-main section a:hover {
-  color: #B58DB6;
-}
+  main section a:hover {
+    color: #b58db6;
+  }
 
-section {
+  section {
     padding: 0 10%;
   }
-.group {
+
+  .img-padded {
+    width: 40%;
+    margin-left: 30%;
+  }
+  img {
+    width: 100%;
+  }
+}
+@media all and (min-width: 820px) {
+  .group {
     flex-direction: row;
   }
-.img-padded {
-    padding-top: 100px;
+  .img-padded {
+    margin-top: 30%;
+    width: 100%;
+    margin-left: 0;
   }
-img {
-  width: 100%;
-}
-
 }

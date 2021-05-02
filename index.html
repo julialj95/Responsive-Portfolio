@@ -1,171 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Julia Johnson | Responsive Webpage Portfolio</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Julia Johnson | Responsive Webpage Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css"/>
-  <link rel="stylesheet" type="text/css" href="style.css"/>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <ul id="menu">
-				<li><a href="#home">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#work">Portfolio</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-    </nav>
-    <div id="home">
-    <div>
-      <h1>Looking for a web developer?</h1>
-      <h3>Hello! My name is Julia. I'm a web developer living in Minneapolis, Minnesota.</h3>
-      <a href="#contact" class="btn">WORK WITH ME</a>
-    </div>
-    </div>
-  </header>
-
-  <main>
-  <section id="about" class="bg-gray">
-    <h2 class="center">About Julia</h2>  
-    <div class="group">
-      <div class="item">
-        <img class="img-padded" src="images/julia.jpg" alt="Picture of Julia"/>
-      </div>
-      <div class="item-double">
-        <p>I help clients bring their website and application ideas to fruition. In my previous career as a teacher, I developed strong communication and collaboration skills that will help me to thrive on a team with other programmers! </p>
-        <p>I am driven by an insatiable curiosity and desire to always keep learning. Coding allows me to learn new things every day!
-        <p>When I'm not busy learning cool, new programming skills, I love:</p>
-          <ul>
-            <li>Connecting with others through music (I play the guitar, fiddle and French Horn)</li>
-            <li>Learning new languages</li>
-            <li>Taking advantage of Minnesota's four beautiful seasons by hiking, skiing and kayaking</li>
-          </ul>
-      <div class="group">
-        <div class="item">
-        <h3>Languages and Frameworks</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-          <li>React</li>
-          <li>Node</li>
-	  <li>Express</li>
+  <body>
+    <header>
+      <nav>
+        <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
+      <div id="home">
+        <div>
+          <h1>Looking for a web developer?</h1>
+          <h3>
+            Hello! My name is Julia. I'm a web developer living in Minneapolis,
+            Minnesota.
+          </h3>
+          <a href="#contact" class="btn">WORK WITH ME</a>
         </div>
-        <div class="item">
-          <h3>Strengths</h3>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="bg-gray">
+        <h2 class="center">About Julia</h2>
+        <div class="group">
+          <div class="item">
+            <img
+              class="img-padded"
+              src="images/julia.jpg"
+              alt="Picture of Julia"
+            />
+          </div>
+          <div class="item-double">
+            <p>
+              I help clients bring their website and application ideas to
+              fruition. In my previous career as a teacher, I developed strong
+              communication and collaboration skills that will help me to thrive
+              on a team with other programmers!
+            </p>
+            <p>
+              I am driven by an insatiable curiosity and desire to always keep
+              learning. Coding allows me to learn new things every day!
+            </p>
+            <p>
+              When I'm not busy learning cool, new programming skills, I love:
+            </p>
             <ul>
-              <li>Communication</li>
-              <li>Language Aquisition</li>
-          <li>Attention to Detail</li>
-        </ul>
+              <li>
+                Connecting with others through music (I play the guitar, fiddle
+                and French Horn)
+              </li>
+              <li>Learning new languages</li>
+              <li>
+                Taking advantage of Minnesota's four beautiful seasons by
+                hiking, skiing and kayaking
+              </li>
+            </ul>
+            <div class="group">
+              <div class="item">
+                <h3>Languages and Frameworks</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>React</li>
+                  <li>Node</li>
+                  <li>Express</li>
+                </ul>
+              </div>
+              <div class="item">
+                <h3>Strengths</h3>
+                <ul>
+                  <li>Communication</li>
+                  <li>Language Aquisition</li>
+                  <li>Attention to Detail</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    </div>
-  </section>
-  <!-- 3 project examples side by side in flexboxes -->
-  <section id="work" class="bg-green">
-    <h2 class="center lg-text">Projects</h2>
-  <div class="group">
-    <div class="item">
-      <h3 class="center">LangRec</h3>
-      <img src="images/homepage.png" alt="LangRec Home Page">
-      <img src="images/resultitem.png" alt="Langrec Result Page">
-      <br>
-      <br>
-      <p>Speaking multiple languages is a valuable skill, but it can be costly and challenging to find the best resources to study a foreign language. LangRec provides users with targeted recommendations for language-learning resources based on their learning style, language goals, budget and current level. LangRec is a server side application built using React and Node. Some additional skills used include: 
-      </p>
-      <ul>
-        <li>React's Context API</li>
-        <li>Express</li>
-	<li>PostgreSQL</li>
-      </ul>
-      <a class="r-margin" href="https://github.com/julialj95/LangRec-client" target="_blank">Github Client Repo</a>
-      <a class="r-margin" href="https://github.com/julialj95/langrec-api" target="_blank">Github API Repo</a>
-      <a href="https://langrec-app.vercel.app/" target="_blank">Visit LangRec</a>
-    </div>
-    <div class="item">
-      <h3 class="center">MyHealthHacker</h3>
-      <img src="images/healthHome.png" alt="My Health Hacker Home Page">
-      <img src="images/healthLog.png" alt="My Health Hacker Log Page">
-      <p>MyHealthHacker helps users to keep track of their health-related habits such as sleep, exercise, and hydration, as well as their mental health. Over time, they can track trends in their physical and mental health and adjust their behavior to feel their best! The data is managed using a PostgreSQL database. Additional skills used include: </p>
-      <ul>
-        <li>React</li>
-        <li>Node</li>
-        <li>Express</li>
-      </ul>
-      <a class="r-margin" href="https://github.com/julialj95/myhealthhacker-app" target="_blank">Github Client Repo</a>
-	    <a class="r-margin" href="https://github.com/julialj95/myhealthhacker-api" target="_blank">Github API Repo</a>
-      <a href="https://myhealthhacker.vercel.app" target="_blank">Visit MyHealthHacker</a>
-    </div>
-    <div class="item">
-      <h3 class="center">Story Seeker</h3>
-      <img src="images/start-page.png" alt="Story Seeker home page">
-      <img src="images/example-results.png" alt="Story Seeker home page">
-      <p>Most people have experienced the feeling of finishing a great book and not knowing what to read next. Story Seeker helps users to find the perfect book that they will love to read! Using Story Seeker, users can submit the title of a book that they enjoy. Story Seeker then provides book recommendations that the user will likely enjoy and shows purchase options. I utilized the TasteDive API and the Google Books API to provide users with recommendations. Additional skills used include: </p>
-      <ul>
-        <li>JavaScript ES6</li>
-        <li>jQuery</li>
-        <li>HTML/CSS</li>
-      </ul>
-      <a class="r-margin" href="https://github.com/julialj95/Story-Seeker" target="_blank">Github Repo Link</a>
-      <a href="https://julialj95.github.io/Story-Seeker/" target="_blank">Visit Story Seeker</a>
-    </div>
-  </div>
-  </section>
-  <!-- section with contact information -->
-  <section id="contact" class="bg-gray">
-      <h3 class="center">Contact Me</h3>
-      <p class="center">Send me a message and I will respond within 24 hours. I look forward to hearing from you!</p>
-    <div class="group">
-      <div class="item">
-      <form
- 	 action="https://formspree.io/f/xleonkqk"
-  	 method="POST"
-      >
-      <label for="name"><b>Name</b></label>
-      <input id="name" type="text" name="name" required />
+      </section>
 
-      <label for="email"><b>Email address</b></label>
-      <input id="email" type="text" name="email" required/>
+      <section id="work" class="bg-green">
+        <h2 class="center lg-text">Projects</h2>
+        <div class="group">
+          <div class="item">
+            <h3 class="center">LangRec</h3>
+            <img src="images/homepage.png" alt="LangRec Home Page" />
+            <img src="images/resultitem.png" alt="Langrec Result Page" />
+            <br />
+            <br />
+            <p>
+              Speaking multiple languages is a valuable skill, but it can be
+              costly and challenging to find the best resources to study a
+              foreign language. LangRec provides users with targeted
+              recommendations for language-learning resources based on their
+              learning style, language goals, budget and current level. LangRec
+              is a server side application built using React and Node. Some
+              additional skills used include:
+            </p>
+            <ul>
+              <li>React's Context API</li>
+              <li>Express</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <a
+              class="r-margin"
+              href="https://github.com/julialj95/LangRec-client"
+              target="_blank"
+              >GitHub Client Repo</a
+            >
+            <a
+              class="r-margin"
+              href="https://github.com/julialj95/langrec-api"
+              target="_blank"
+              >GitHub API Repo</a
+            >
+            <a href="https://langrec-app.vercel.app/" target="_blank"
+              >Visit LangRec</a
+            >
+          </div>
+          <div class="item">
+            <h3 class="center">MyHealthHacker</h3>
+            <img src="images/healthHome.png" alt="My Health Hacker Home Page" />
+            <img src="images/healthLog.png" alt="My Health Hacker Log Page" />
+            <p>
+              MyHealthHacker helps users to keep track of their health-related
+              habits such as sleep, exercise, and hydration, as well as their
+              mental health. Over time, they can track trends in their physical
+              and mental health and adjust their behavior to feel their best!
+              The data is managed using a PostgreSQL database. Additional skills
+              used include:
+            </p>
+            <ul>
+              <li>React</li>
+              <li>Node</li>
+              <li>Express</li>
+            </ul>
+            <a
+              class="r-margin"
+              href="https://github.com/julialj95/myhealthhacker-app"
+              target="_blank"
+              >GitHub Client Repo</a
+            >
+            <a
+              class="r-margin"
+              href="https://github.com/julialj95/myhealthhacker-api"
+              target="_blank"
+              >GitHub API Repo</a
+            >
+            <a href="https://myhealthhacker.vercel.app" target="_blank"
+              >Visit MyHealthHacker</a
+            >
+          </div>
+          <div class="item">
+            <h3 class="center">Story Seeker</h3>
+            <img src="images/start-page.png" alt="Story Seeker home page" />
+            <img
+              src="images/example-results.png"
+              alt="Story Seeker home page"
+            />
+            <p>
+              Most people have experienced the feeling of finishing a great book
+              and not knowing what to read next. Story Seeker helps users to
+              find the perfect book that they will love to read! Using Story
+              Seeker, users can submit the title of a book that they enjoy.
+              Story Seeker then provides book recommendations that the user will
+              likely enjoy and shows purchase options. I utilized the TasteDive
+              API and the Google Books API to provide users with
+              recommendations. Additional skills used include:
+            </p>
+            <ul>
+              <li>JavaScript ES6</li>
+              <li>jQuery</li>
+              <li>HTML/CSS</li>
+            </ul>
+            <a
+              class="r-margin"
+              href="https://github.com/julialj95/Story-Seeker"
+              target="_blank"
+              >GitHub Repo Link</a
+            >
+            <a href="https://julialj95.github.io/Story-Seeker/" target="_blank"
+              >Visit Story Seeker</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- section with contact information -->
+      <section id="contact" class="bg-gray">
+        <h3 class="center">Contact Me</h3>
+        <p class="center">
+          Send me a message and I will respond within 24 hours. I look forward
+          to hearing from you!
+        </p>
+        <div class="group">
+          <div class="item">
+            <form action="https://formspree.io/f/xleonkqk" method="POST">
+              <label for="name"><b>Name</b></label>
+              <input id="name" type="text" name="name" required />
 
-      <label for="form-message"><b>Your message:</b></label>
-      <textarea id="form-message" name="message" placeholder="How can I help you?"></textarea>
+              <label for="email"><b>Email address</b></label>
+              <input id="email" type="text" name="email" required />
 
-      <button type="submit">Submit</button>
-    </form>
-      </div>
-      <div class="item">
-        <img src="images/mail.jpg" alt="Typing an Email">
-      </div>
-    </div>
-    <div class="group">
-      <div class="item center">
-        <p class="sm-text no-padding">Email me at: <a href="mailto:julialj95@gmail.com" target="_blank">julialj95@gmail.com</a></p>
-      </div>
-      <div class="item center">
-        <a href="https://www.linkedin.com/in/julia-johnson-40a77b108/" target="_blank">LinkedIn</a>
-      </div>
-      <div class="item center">
-        <a href="https://github.com/julialj95" target="_blank">Github</a>
-      </div>
-    </div>
-  </section>
+              <label for="form-message"><b>Your message:</b></label>
+              <textarea
+                id="form-message"
+                name="message"
+                placeholder="How can I help you?"
+              ></textarea>
 
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="item">
+            <img src="images/mail.jpg" alt="Typing an Email" />
+          </div>
+        </div>
+        <div class="group">
+          <div class="item center">
+            <p class="sm-text no-padding">
+              Email me at:
+              <a href="mailto:julialj95@gmail.com" target="_blank"
+                >julialj95@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="item center">
+            <a
+              href="https://www.linkedin.com/in/julia-johnson-40a77b108/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+          <div class="item center">
+            <a href="https://github.com/julialj95" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  </main>
-
-  <footer>
-    <h4 class="center">Property of Julia Johnson | Copyright 2021</h4>
-  </footer>
-
-
-
-</body>
-
+    <footer>
+      <h4 class="center">Property of Julia Johnson | 2021</h4>
+    </footer>
+  </body>
 </html>
