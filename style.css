@@ -67,7 +67,7 @@ header nav ul li a:link {
   color: white;
 }
 header nav ul li a:visited {
-  color: red;
+  color: rgb(147, 211, 18);
 }
 
 header nav ul li a:active {
