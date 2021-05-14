@@ -89,7 +89,7 @@ h2 {
 }
 h3 {
   font-size: 32px;
-  margin: 0px;
+  margin: 0 0 12px 0;
   padding: 0px;
 }
 p,
@@ -218,5 +218,8 @@ main section a {
     margin-top: 30%;
     width: 100%;
     margin-left: 0;
+  }
+  .projects_desc {
+    padding: 0 25px 0 25px;
   }
 }
